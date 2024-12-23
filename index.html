@@ -63,9 +63,27 @@
 
     <section id="contact" class="contact">
         <h2>Kontakt aufnehmen</h2>
-        <form action="submit-form.php" method="post">
+
+        <form action=""https://formspree.io/f/mqaakjjn" method="post" class="contact-form">
             <input type="text" name="name" placeholder="Ihr Name" required>
             <input type="email" name="email" placeholder="Ihre E-Mail" required>
+            <input type="tel" name="phone" placeholder="Telefonnummer">
+            
+            <select name="goals" required>
+                <option value="" disabled selected>Fitnessziele</option>
+                <option value="weightLoss">Gewichtsreduktion</option>
+                <option value="muscleGain">Muskelaufbau</option>
+                <option value="endurance">Ausdauerverbesserung</option>
+            </select>
+            
+            <textarea name="healthIssues" placeholder="Gesundheitliche Probleme?"></textarea>
+            
+            <label>Vorlieben:</label>
+            <label><input type="checkbox" name="preferences[]" value="outdoor"> Outdoor</label>
+            <label><input type="checkbox" name="preferences[]" value="gym"> Fitnessstudio</label>
+            
+            <input type="text" name="availability" placeholder="Verfügbarkeit" required>
+            
             <button type="submit" class="cta-btn">Los geht's</button>
         </form>
     </section>
