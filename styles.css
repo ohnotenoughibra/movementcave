@@ -7,9 +7,9 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #000; /* Black text for main content */
+    color: #000;
     line-height: 1.6;
-    background-color: #f8f8f8; /* Light gray background */
+    background-color: #f8f8f8;
 }
 
 /* Header styles */
@@ -18,11 +18,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: #fff; /* White header */
+    background-color: #fff;
 }
 
 .header .logo img {
-    height: 70px; /* Adjust as needed */
+    height: 70px;
 }
 
 .nav-menu {
@@ -36,12 +36,12 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #000; /* Black text for navigation */
+    color: #000;
     transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-    color: #ff0000; /* Red color on hover */
+    color: #ff0000;
 }
 
 /* Hero Section */
@@ -49,7 +49,7 @@ body {
     position: relative;
     padding: 6rem 2rem;
     overflow: hidden;
-    background-color: #000; /* Black background for hero */
+    background-color: #000;
 }
 
 .hero-content {
@@ -66,12 +66,12 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: 1;
-    opacity: 0.5; /* Adjust for desired overlay effect */
+    opacity: 0.5;
 }
 
 .hero h1, .hero h2 {
-    color: #fff; /* White text for contrast on black background */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Dark text shadow for depth */
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero h1 {
@@ -87,15 +87,15 @@ body {
 .cta-btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
-    background-color: #ff0000; /* Red button */
-    color: #fff; /* White text for contrast */
+    background-color: #ff0000;
+    color: #fff;
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
-    background-color: #d32f2f; /* Darker shade of red on hover */
+    background-color: #d32f2f;
 }
 
 /* About Section */
@@ -105,7 +105,7 @@ body {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff; /* White background */
+    background-color: #fff;
 }
 
 .about-content, .about-image {
@@ -118,7 +118,7 @@ body {
 }
 
 .about-content h2, .about-content p {
-    color: #000; /* Black text */
+    color: #000;
 }
 
 .about-image img {
@@ -132,11 +132,11 @@ body {
 .services {
     padding: 4rem 2rem;
     text-align: center;
-    background-color: #f8f8f8; /* Light grey background */
+    background-color: #f8f8f8;
 }
 
 .services h2, .service h3, .service p {
-    color: #000; /* Black text for services */
+    color: #000;
 }
 
 .service-grid {
@@ -148,8 +148,8 @@ body {
 }
 
 .service {
-    background: #fff; /* White service cards */
-    border: 1px solid #000; /* Black border for contrast */
+    background: #fff;
+    border: 1px solid #000;
     border-radius: 5px;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -171,13 +171,13 @@ body {
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text for contrast */
+    background-color: #000;
+    color: #fff;
     text-align: center;
 }
 
 .contact h2 {
-    color: #fff; /* White text for contrast */
+    color: #fff;
 }
 
 .contact form {
@@ -198,35 +198,67 @@ body {
 
 .contact input {
     background: rgba(255,255,255,0.9);
-    color: #000; /* Black text for input placeholders */
+    color: #000;
 }
 
 .contact button {
-    background: #ff0000; /* Red button */
-    color: #fff; /* White text for contrast */
+    background: #ff0000;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
 
 .contact button:hover {
-    background: #d32f2f; /* Darker shade of red on hover */
+    background: #d32f2f;
 }
 
 /* Footer */
 .footer {
-    background: #000; /* Black footer */
-    color: #fff; /* White text for contrast */
+    background: #000;
+    color: #fff;
     text-align: center;
     padding: 2rem;
 }
 
+.social-links {
+    margin-top: 1rem;
+}
+
 .social-links a {
-    color: #fff;
+    display: inline-block;
     margin: 0 0.5rem;
-    font-size: 20px;
-    transition: color 0.3s;
+    transition: transform 0.3s;
 }
 
 .social-links a:hover {
-    color: #ff0000; /* Red color on hover */
+    transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        margin-top: 1rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-content, .about-image {
+        min-width: 100%;
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
 }
